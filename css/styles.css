@@ -1,39 +1,81 @@
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+  font-family: "Inter", sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
 }
 
 .section-title {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 8px;
-    margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 .section-title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 55%;
-    height: 3px;
-    background-color: #3b82f6;
-    border-radius: 9999px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55%;
+  height: 3px;
+  background-color: #3b82f6;
+  border-radius: 9999px;
 }
 
 /* Custom scrollbar for better aesthetics */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
+  background: #f1f1f1;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
+  background: #888;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
+}
+
+/* Animación fade-in con movimiento hacia abajo */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 1s ease forwards;
+}
+
+/* Animación para zoom lento*/
+@keyframes bgZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-bg-zoom {
+  animation: bgZoom 10s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Retrasos para escalonar animaciones */
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+.animation-delay-400 {
+  animation-delay: 0.4s;
 }
