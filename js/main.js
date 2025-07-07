@@ -1,3 +1,7 @@
+const mobileMenuButton = document.getElementById("mobile-menu-button");
+const closeMobileMenuButton = document.getElementById("close-mobile-menu");
+const mobileMenu = document.getElementById("mobile-menu");
+
 // Smooth scrolling para enlaces de navegación
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -12,9 +16,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Manejo del menú móvil
-const mobileMenuButton = document.getElementById("mobile-menu-button");
-const closeMobileMenuButton = document.getElementById("close-mobile-menu");
-const mobileMenu = document.getElementById("mobile-menu");
 
 if (mobileMenuButton && closeMobileMenuButton && mobileMenu) {
   mobileMenuButton.addEventListener("click", () => {
@@ -35,7 +36,7 @@ if (mobileMenuButton && closeMobileMenuButton && mobileMenu) {
 
 // Inicialización de AOS (Animate On Scroll)
 AOS.init({
-  duration: 800,
+  duration: 600,
   once: true,
   easing: "ease-in-out",
 });
