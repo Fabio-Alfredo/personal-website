@@ -25,6 +25,9 @@
     <!-- Header / Navigation -->
     <header
       class="bg-white shadow-md py-4 px-6 fixed w-full z-10 top-0 rounded-b-xl"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-easing="ease-out-cubic"
     >
       <nav class="container mx-auto flex justify-between items-center">
         <a
@@ -163,12 +166,11 @@
         class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32 flex items-center justify-center overflow-hidden rounded-b-3xl shadow-lg"
       >
         <div
-          class="absolute inset-0 opacity-10"
-          style="
-            background-image: url('https://placehold.co/1200x800/ffffff/000000?text=Backend · Clean Code · Robust Systems');
-            background-size: cover;
-          "
-        ></div>
+          class="absolute inset-0 flex items-end justify-center  md:text-5xl text-lg font-extrabold text-blue-500 whitespace-nowrap pointer-events-none select-none pb-4"
+        >
+          Backend · Clean Code · Robust Systems
+        </div>
+
         <div class="container mx-auto text-center relative z-10 px-4">
           <h1
             class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down animate-bg-zoom"
@@ -871,7 +873,17 @@
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-xl">
+      <div class="container mx-auto px-4">
+        <p>&copy; 2025 Fabio Hernandez. Todos los derechos reservados.</p>
+        <p class="mt-4 text-xs text-gray-400">
+          Construido con <strong>HTML</strong>, <strong>Tailwind CSS</strong> y
+          ❤️ por Fabio
+        </p>
+      </div>
+      <p class="mt-2 text-xs text-gray-400">Última actualización: julio 2025</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
