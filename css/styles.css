@@ -4,6 +4,11 @@ body {
   color: #333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .section-title {
   position: relative;
   display: inline-block;
