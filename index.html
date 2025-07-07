@@ -1,103 +1,324 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fabio Hernández - Desarrollador Backend</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-</head>
-<body class="antialiased">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased">
     <!-- Header / Navigation -->
-    <header class="bg-white shadow-md py-4 px-6 fixed w-full z-10 top-0 rounded-b-xl">
-        <nav class="container mx-auto flex justify-between items-center">
-            <a href="https://github.com/Fabio-Alfredo" class="text-2xl font-bold text-blue-600" >Fabio-Alfredo.dev</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition duration-300">Inicio</a>
-                <a href="#sobre-mi" class="text-gray-700 hover:text-blue-600 transition duration-300">Sobre Mí</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Habilidades</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Experiencia</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Proyectos</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Info Adicional</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Contacto</a>
-            </div>
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-        </nav>
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white bg-opacity-95 z-20 flex flex-col items-center justify-center space-y-8">
-            <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-700 focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-            <a href="#" class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300" >Inicio</a>
-            <a href="#" class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300" >Sobre Mí</a>
-            <a href="#" class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300" >Habilidades</a>
-            <a href="#" class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300" >Experiencia</a>
-            <a href="#" class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300" >Proyectos</a>
-            <a href="#" class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300" >Info Adicional</a>
-            <a href="#" class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300" >Contacto</a>
+    <header
+      class="bg-white shadow-md py-4 px-6 fixed w-full z-10 top-0 rounded-b-xl"
+    >
+      <nav class="container mx-auto flex justify-between items-center">
+        <a
+          href="https://github.com/Fabio-Alfredo"
+          class="text-2xl font-bold text-blue-600"
+          >Fabio-Alfredo.dev</a
+        >
+        <div class="hidden md:flex space-x-6">
+          <a
+            href="#inicio"
+            class="text-gray-700 hover:text-blue-600 transition duration-300"
+            >Inicio</a
+          >
+          <a
+            href="#sobre-mi"
+            class="text-gray-700 hover:text-blue-600 transition duration-300"
+            >Sobre Mí</a
+          >
+          <a
+            href="#habilidades"
+            class="text-gray-700 hover:text-blue-600 transition duration-300"
+            >Habilidades</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 hover:text-blue-600 transition duration-300"
+            >Experiencia</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 hover:text-blue-600 transition duration-300"
+            >Proyectos</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 hover:text-blue-600 transition duration-300"
+            >Info Adicional</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 hover:text-blue-600 transition duration-300"
+            >Contacto</a
+          >
         </div>
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden fixed inset-0 bg-white bg-opacity-95 z-20 flex flex-col items-center justify-center space-y-8"
+      >
+        <button
+          id="close-mobile-menu"
+          class="absolute top-6 right-6 text-gray-700 focus:outline-none"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+        <a
+          href="#"
+          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300"
+          >Inicio</a
+        >
+        <a
+          href="#"
+          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300"
+          >Sobre Mí</a
+        >
+        <a
+          href="#"
+          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300"
+          >Habilidades</a
+        >
+        <a
+          href="#"
+          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300"
+          >Experiencia</a
+        >
+        <a
+          href="#"
+          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300"
+          >Proyectos</a
+        >
+        <a
+          href="#"
+          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300"
+          >Info Adicional</a
+        >
+        <a
+          href="#"
+          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300"
+          >Contacto</a
+        >
+      </div>
     </header>
 
     <!--Main sections-->
-    <main >
-        <!-- Hero Section -->
-        <section id="inicio" class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32 flex items-center justify-center overflow-hidden rounded-b-3xl shadow-lg">
-            <div class="absolute inset-0 opacity-10" style="background-image: url('https://placehold.co/1200x800/ffffff/000000?text=Backend · Clean Code · Robust Systems'); background-size: cover;"></div>
-            <div class="container mx-auto text-center relative z-10 px-4">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">
-                    Hola, soy <span class="text-yellow-300">Fabio Hernández</span>
-                </h1>
-                <p class="text-xl md:text-2xl font-light mb-8 animate-fade-in-up">
-                    Desarrollador Backend apasionado por construir soluciones robustas y escalables.
-                </p>
-                <div class="space-x-4">
-                    <a href="#" class="inline-block bg-white text-blue-600 hover:bg-blue-100 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105">
-                        Ver Proyectos
-                    </a>
-                    <a href="#" class="inline-block border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105">
-                        Contactar
-                    </a>
-                </div>
-            </div>
-        </section>
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="inicio"
+        class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32 flex items-center justify-center overflow-hidden rounded-b-3xl shadow-lg"
+      >
+        <div
+          class="absolute inset-0 opacity-10"
+          style="
+            background-image: url('https://placehold.co/1200x800/ffffff/000000?text=Backend · Clean Code · Robust Systems');
+            background-size: cover;
+          "
+        ></div>
+        <div class="container mx-auto text-center relative z-10 px-4">
+          <h1
+            class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down"
+          >
+            Hola, soy <span class="text-yellow-300">Fabio Hernández</span>
+          </h1>
+          <p class="text-xl md:text-2xl font-light mb-8 animate-fade-in-up">
+            Desarrollador Backend apasionado por construir soluciones robustas y
+            escalables.
+          </p>
+          <div class="space-x-4">
+            <a
+              href="#"
+              class="inline-block bg-white text-blue-600 hover:bg-blue-100 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105"
+            >
+              Ver Proyectos
+            </a>
+            <a
+              href="#"
+              class="inline-block border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105"
+            >
+              Contactar
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <!-- About Me Section -->
-        <section id="sobre-mi" class="py-16 md:py-24 bg-white rounded-xl shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-6">
-            <div class="container mx-auto text-center ">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 section-title">Sobre Mí</h2>
-                <div class="flex flex-col md:flex-row items-center md:space-x-12">
-                    <div class="md:w-1/3 mb-8 md:mb-0">
-                        <img src="/assets/img/Fabio.jpeg" alt="Foto de Perfil" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl mx-auto border-4 border-blue-200 transition-transform duration-500 hover:scale-105 cursor-pointer">
-                    </div>
-                    <div class="md:w-2/3 text-left">
-                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                            Soy un desarrollador backend con experiencia en el desarrollo de APIs RESTful utilizando Node.js, Express, MongoDB, Spring Boot y postgreSQL. He liderado y desarrollado varios proyectos personales que simulan entornos de producción reales, aplicando principios como la autenticación con JWT, control de accesos por roles, almacenamiento y gestión de imágenes, paginación y relaciones complejas entre entidades.                        </p>
-                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                            Me apasiona resolver problemas complejos y estoy en constante búsqueda de aprender nuevas tecnologías y buenas prácticas en el desarrollo de software. He trabajado en una variedad de proyectos personales y académicos que me han permitido adquirir experiencia práctica y fortalecer mis habilidades, siempre buscando aportar soluciones innovadoras, funcionales y de alto rendimiento.
-                        </p>
-                        <p class="text-lg text-gray-700 leading-relaxed">
-                            Fuera del código, disfruto de leer sobre tecnología, jugar videojuegos, jugar futbol y ver anime.                        
-                        </p>
-                    </div>
-                </div>
+      <!-- About Me Section -->
+      <section
+        id="sobre-mi"
+        class="py-16 md:py-24 bg-white rounded-xl shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-6"
+      >
+        <div class="container mx-auto text-center">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 section-title"
+          >
+            Sobre Mí
+          </h2>
+          <div class="flex flex-col md:flex-row items-center md:space-x-12">
+            <div class="md:w-1/3 mb-8 md:mb-0">
+              <img
+                src="/assets/img/Fabio.jpeg"
+                alt="Foto de Perfil"
+                class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl mx-auto border-4 border-blue-200 transition-transform duration-500 hover:scale-105 cursor-pointer"
+              />
             </div>
-        </section>
+            <div class="md:w-2/3 text-left">
+              <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Soy un desarrollador backend con experiencia en el desarrollo de
+                APIs RESTful utilizando Node.js, Express, MongoDB, Spring Boot y
+                postgreSQL. He liderado y desarrollado varios proyectos
+                personales que simulan entornos de producción reales, aplicando
+                principios como la autenticación con JWT, control de accesos por
+                roles, almacenamiento y gestión de imágenes, paginación y
+                relaciones complejas entre entidades.
+              </p>
+              <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Me apasiona resolver problemas complejos y estoy en constante
+                búsqueda de aprender nuevas tecnologías y buenas prácticas en el
+                desarrollo de software. He trabajado en una variedad de
+                proyectos personales y académicos que me han permitido adquirir
+                experiencia práctica y fortalecer mis habilidades, siempre
+                buscando aportar soluciones innovadoras, funcionales y de alto
+                rendimiento.
+              </p>
+              <p class="text-lg text-gray-700 leading-relaxed">
+                Fuera del código, disfruto de leer sobre tecnología, jugar
+                videojuegos, jugar futbol y ver anime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section
+        id="habilidades"
+        class="py-16 md:py-24 bg-gray-50 rounded-xl shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-6"
+      >
+        <div class="container mx-auto text-center">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 section-title"
+          >
+            Habilidades
+          </h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Lenguajes de Programación -->
+            <div
+              class="bg-white  p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-semibold text-blue-600 mb-3">
+                Lenguajes
+              </h3>
+              <ul class="text-gray-700 text-center space-y-4 ">
+                <li>
+                  <span class="block font-medium text-lg">JavaScript</span>
+                  <span class="block text-sm text-gray-500 ml-2"
+                    >Frameworks: Node.js, React, Express</span
+                  >
+                </li>
+                <li>
+                  <span class="block font-medium text-lg">Java</span>
+                  <span class="block text-sm text-gray-500 ml-2"
+                    >Framework: Spring Boot</span
+                  >
+                </li>
+                <li>
+                  <span class="block font-medium text-lg">HTML & CSS</span>
+                  <span class="block text-sm text-gray-500 ml-2"
+                    >Framework: Tailwind CSS</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Bases de Datos -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-semibold text-blue-600 mb-3">
+                Bases de Datos
+              </h3>
+              <ul class="text-gray-700 text-center space-y-2">
+                <li><span class="font-medium">PostgreSQL</span></li>
+                <li><span class="font-medium">MySQL</span></li>
+                <li><span class="font-medium">MongoDB</span></li>
+              </ul>
+            </div>
+            <!-- Herramientas y Nube -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-semibold text-blue-600 mb-3">
+                Herramientas & Nube
+              </h3>
+              <ul class="text-gray-700 text-center space-y-2">
+                <li><span class="font-medium">Docker</span></li>
+                <li><span class="font-medium">Git y GitHub</span></li>
+                <li>
+                  <span class="font-medium">Visual Studio Code</span>
+                </li>
+                <li><span class="font-medium">Google Cloud Console</span></li>
+                <li><span class="font-medium">Linux</span></li>
+              </ul>
+            </div>
+            <!-- Otros -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-semibold text-blue-600 mb-3">Otros</h3>
+              <ul class="text-gray-700 text-center space-y-2">
+                <li><span class="font-medium">APIs RESTful</span></li>
+                <li><span class="font-medium">Microservicios</span></li>
+                <li><span class="font-medium">Testing</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer >
-    </footer>
-
-</body>
+    <footer></footer>
+  </body>
 </html>
