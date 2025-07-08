@@ -33,7 +33,7 @@ html.dark body {
 }
 
 html.dark .section-title::after {
-  background-color: yellow;
+  background-color: #facc15;
 }
 
 
