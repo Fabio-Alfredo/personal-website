@@ -32,6 +32,10 @@ if (mobileMenuButton && closeMobileMenuButton && mobileMenu) {
       mobileMenu.classList.add("hidden");
     });
   });
+
+  window.addEventListener("scroll", () => {
+    mobileMenu.classList.add("hidden");
+  });
 }
 
 // Inicialización de AOS (Animate On Scroll)
