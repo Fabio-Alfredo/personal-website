@@ -40,6 +40,10 @@ if (mobileMenuButton && closeMobileMenuButton && mobileMenu) {
       mobileMenu.classList.add("hidden");
     });
   });
+
+  window.addEventListener("scroll", () => {
+    mobileMenu.classList.add("hidden");
+  });
 }
 
 const toggleBtn = document.getElementById("toggleDark");

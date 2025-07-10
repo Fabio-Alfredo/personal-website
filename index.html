@@ -46,43 +46,43 @@
       <nav class="container mx-auto flex justify-between items-center">
         <a
           href="https://github.com/Fabio-Alfredo"
-          class="text-2xl font-bold text-blue-60 no-copy"
+          class="text-2xl font-bold text-blue-60 cursor-pointer no-copy"
           >Hernandex.dev</a
         >
         <div class="hidden md:flex space-x-6">
           <a
             href="#inicio"
-            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
+            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 cursor-pointer no-copy"
             >Inicio</a
           >
           <a
             href="#sobre-mi"
-            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
+            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 cursor-pointer no-copy"
             >Sobre Mí</a
           >
           <a
             href="#habilidades"
-            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
+            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 cursor-pointer no-copy"
             >Habilidades</a
           >
           <a
             href="#experiencia"
-            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
+            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 cursor-pointer no-copy"
             >Experiencia</a
           >
           <a
             href="#proyectos"
-            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
+            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 cursor-pointer no-copy"
             >Proyectos</a
           >
           <a
             href="#adicional"
-            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
+            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 cursor-pointer no-copy"
             >Info Adicional</a
           >
           <a
             href="#contacto"
-            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
+            class="text-gray-700 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 cursor-pointer no-copy"
             >Contacto</a
           >
         </div>
@@ -107,66 +107,69 @@
           </svg>
         </button>
       </nav>
-      <!-- Mobile Menu Overlay -->
-      <div
-        id="mobile-menu"
-        class="md:hidden fixed inset-0 bg-white bg-opacity-95 z-20 flex flex-col items-center justify-center space-y-8"
-      >
-        <button
-          id="close-mobile-menu"
-          class="absolute top-6 right-6 text-gray-700 focus:outline-none"
+
+        <!-- Mobile Menu Overlay -->
+        <div
+          id="mobile-menu"
+          class="hidden absolute top-14 right-4 w-56 bg-white border border-2 text-blue-500  rounded-xl shadow-lg p-4 z-40 space-y-3 dark:bg-gray-800 dark:text-white dark:border-gray-700"
         >
-          <svg
-            class="w-8 h-8"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <button
+            id="close-mobile-menu"
+            class="absolute top-2 right-2 text-blue-500 hover:text-yellow-300 dark:text-white dark:hover:text-yellow-300 focus:outline-none"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            ></path>
-          </svg>
-        </button>
-        <a
-          href="#inicio"
-          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
-          >Inicio</a
-        >
-        <a
-          href="#sobre-mi"
-          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
-          >Sobre Mí</a
-        >
-        <a
-          href="#habilidades"
-          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
-          >Habilidades</a
-        >
-        <a
-          href="#experiencia"
-          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
-          >Experiencia</a
-        >
-        <a
-          href="#proyectos"
-          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
-          >Proyectos</a
-        >
-        <a
-          href="#adicional"
-          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
-          >Info Adicional</a
-        >
-        <a
-          href="#contacto"
-          class="text-3xl font-medium text-gray-800 hover:text-blue-600 transition duration-300 dark:text-white dark:hover:text-yellow-500 no-copy"
-          >Contacto</a
-        >
-      </div>
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+
+          <a
+            href="#inicio"
+            class="block text-lg font-semibold hover:text-yellow-300"
+            >Inicio</a
+          >
+          <a
+            href="#sobre-mi"
+            class="block text-lg font-semibold hover:text-yellow-300"
+            >Sobre Mí</a
+          >
+          <a
+            href="#habilidades"
+            class="block text-lg font-semibold hover:text-yellow-300"
+            >Habilidades</a
+          >
+          <a
+            href="#experiencia"
+            class="block text-lg font-semibold hover:text-yellow-300"
+            >Experiencia</a
+          >
+          <a
+            href="#proyectos"
+            class="block text-lg font-semibold hover:text-yellow-300"
+            >Proyectos</a
+          >
+          <a
+            href="#adicional"
+            class="block text-lg font-semibold hover:text-yellow-300"
+            >Info Adicional</a
+          >
+          <a
+            href="#contacto"
+            class="block text-lg font-semibold hover:text-yellow-300"
+            >Contacto</a
+          >
+        </div>
+      </nav>
     </header>
 
     <!--Main sections-->
