@@ -80,12 +80,18 @@
           >
         </div>
 
-        <!-- Botón modo oscuro (puedes ponerlo en tu header) -->
+        <!-- Botón modo oscuro-->
         <button
           id="toggleDark"
-          class="text-gray-700 dark:text-white border border-gray-300 dark:border-gray-600 px-3 py-1 rounded ml-4"
+          class="relative w-14 h-8 bg-white pl-[1px]  dark:bg-gray-600 rounded-full transition duration-300 focus:outline-none border border-gray-400 dark:border-gray-500 flex items-center"
+          title="Cambiar tema"
         >
-          🌙/☀️
+          <span
+            id="toggleIcon"
+            class=" w-7 h-7 border border-gray-300 bg-white rounded-full flex items-center justify-center text-xl transition-all duration-300 transform dark:translate-x-6  dark:bg-gray-800 dark:text-yellow-300"
+          >
+            🌞
+          </span>
         </button>
 
         <!-- Mobile Menu Button -->
