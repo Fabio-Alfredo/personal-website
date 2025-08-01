@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "SafeHouse - Plataforma de Gestión Residencial",
+    "descripcion": "Plataforma web para el control de accesos en residenciales...",
+    "tecnologias": ["Java", "Spring Boot", "React", "tailwindCSS", "PostgreSQL", "Hibernate", "JWT"],
+    "imagen": "./assets/img/terminal-image.png",
+    "github": "https://github.com/Fabio-Alfredo/SafeHouse-Application",
+    "docs": "#"
+  },
+  {
+    "titulo": "Shop - Plataforma de Gestión de Tiendas",
+    "descripcion": "Aplicación Backend para la gestión de tiendas en línea...",
+    "tecnologias": ["JavaScript", "Node.js", "Express", "JWT", "MongoDB"],
+    "imagen": "./assets/img/express-image.jpg",
+    "github": "https://github.com/Fabio-Alfredo/Shop-Backend-express",
+    "docs": "https://fabio-alfredo.github.io/Shop-Backend-express/introduction/"
+  },
+  {
+    "titulo": "MiniTweet - Red Social",
+    "descripcion": "Aplicación Backend para la administración de una red social...",
+    "tecnologias": ["Java", "Spring Boot", "Hibernate", "JWT", "PostgreSQL"],
+    "imagen": "./assets/img/springboot-image.jpg",
+    "github": "https://github.com/Fabio-Alfredo/MiniTweet-Backend-SpringBoot",
+    "docs": "https://fabio-alfredo.github.io/MiniTweet-Backend-SpringBoot/"
+  },
+  {
+    "titulo": "Clinic - Gestión de Clínicas Médicas",
+    "descripcion": "Aplicación Backend para gestión de clínicas y doctores...",
+    "tecnologias": ["Java", "Spring Boot", "Hibernate", "JWT", "PostgreSQL", "ModelMapper"],
+    "imagen": "./assets/img/springboot-image.jpg",
+    "github": "https://github.com/Fabio-Alfredo/Clinic-Backend-SptringBoot",
+    "docs": "#"
+  }
+]
